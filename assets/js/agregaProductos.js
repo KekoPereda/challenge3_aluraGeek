@@ -2,7 +2,9 @@ import { conexionAPI } from "./conexionAPI.js";
 
 let mensaje = document.getElementById("txt-mensaje");
 let btnSubir = document.getElementById("btnSubirProducto");
+let btnLimpiar = document.getElementById("limpiar");
 
+// Evento para agregar producto
 document.getElementById("btnSubirProducto").addEventListener("click", async (event) => {
   event.preventDefault();
   console.log("Formulario interceptado");
@@ -11,7 +13,6 @@ document.getElementById("btnSubirProducto").addEventListener("click", async (eve
   let nombre_producto = document.getElementById("nombre-producto").value.trim();
   let precio_producto = document.getElementById("precio-producto").value.trim();
   let imagen_producto = document.getElementById("imagen-producto").value.trim();
-
 
   if (!nombre_producto) {
     mensaje.innerHTML = "Nombre del producto no ingresado.";
@@ -46,9 +47,15 @@ document.getElementById("btnSubirProducto").addEventListener("click", async (eve
     }, 3000);
 
   } catch (error) {
-
     console.error(error);
     mensaje.innerHTML = "Ocurrió un error al agregar el producto.";
   }
 });
 
+// Evento para limpiar los campos del formulario
+btnLimpiar.addEventListener("click", () => {
+  document.getElementById("nombre-producto").value = ""; // Limpia el campo del nombre del producto
+  document.getElementById("precio-producto").value = ""; // Limpia el campo del precio del producto
+  document.getElementById("imagen-producto").value = ""; // Limpia el campo del enlace de imagen
+  mensaje.innerHTML = ""; // Limpia el mensaje
+});
