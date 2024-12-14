@@ -161,7 +161,17 @@ main {
 .precioProducto {
   font-size: 20px;
   font-weight: 800;
-  margin-top: 15px;
+  align-content: center;
+  height: 30px;
+  color: #6B3630;
+}
+
+
+.precio-eliminar {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: end;
 }
 
 
@@ -173,8 +183,8 @@ main {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   transition: background-color 0.5s;
 
@@ -187,13 +197,6 @@ main {
   padding: 0;
 }
 
-
-.precio-eliminar {
-  display: flex;
-  justify-content: space-between;
-  height: 30px;
-  align-items: flex-end;
-}
 
 .agregaProducto {
   min-width: 40% !important;
