@@ -204,6 +204,7 @@ main {
   background-color: #FFECCC;
   border-radius: 20px;
   padding: 0 25px;
+  min-height: 350px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
