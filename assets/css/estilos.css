@@ -136,7 +136,7 @@ main {
   border-radius: 10px;
   margin: 20px;
   float: left;
-
+  box-shadow: rgba(206, 130, 0, 0.512) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .imgProducto {
@@ -147,7 +147,7 @@ main {
   border: 4px solid rgb(255, 255, 255);
   border-radius: 5px;
   margin-bottom: 10px;
-  background-image: white;
+  background-color: white;
 }
 
 
@@ -155,6 +155,7 @@ main {
   font-size: 18px;
   font-weight: 500;
   width: 230px;
+  height: 55px;
 }
 
 .precioProducto {
@@ -164,10 +165,26 @@ main {
 }
 
 
+#btnEliminar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #09ABF8;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  transition: background-color 0.5s;
 
-.btnEliminar span:hover {
+}
+
+#btnEliminar span:hover {
   background-color: #0093D9;
-  color: #09ABF8;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0;
 }
 
 

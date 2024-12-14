@@ -13,9 +13,12 @@ function crearCard(nombre, precio, imagen, id) {
     <p class="nombreProducto">${nombre}</p>
     <div class="precio-eliminar">
       <p class="precioProducto">$ ${precio}</p>
-      <span id="btnEliminar" class="material-symbols-outlined">
-        delete
-      </span>
+      <button id="btnEliminar">
+        <span  class="material-symbols-outlined">
+          delete
+        </span>
+      </button>
+     
     </div>`;
   return consola;
 }
