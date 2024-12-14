@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+</head>
+
+<body>
+
+  <header>
+    <div class="encabezado">
+      <div class="titulo caja_titulo ">
+        <h1>Alura geek</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <div class="contenedor">
+
+      <div class="contenedor-catalogo">
+        <div class="titulo_secciones caja_titulo ">
+          <h2>Mis productos</h2>
+        </div>
+        <ul class="catalogo scroller" data-lista>
+          <!-- catálogo dinámico-->
+        </ul>
+
+      </div>
+
+
+
+      <div class="agregaProducto">
+
+        <div class="titulo_secciones caja_titulo ">
+          <h2>Agregar Producto:</h2>
+        </div>
+
+        <form class="formulario" data-formulario>
+          <input type="text" placeholder="Nombre del producto" id="nombre-producto" data-nombre>
+          <input type="number" placeholder="Precio del producto" id="precio-producto" data-precio>
+          <input type="text" placeholder="Enlace de imagen" id="imagen-producto" data-imagen>
+          <!-- <input type="file" accept="image/*" placeholder="Subir imagen" data-url> -->
+          <div class="botones">
+            <button type="button" class="btn" id="btnSubirProducto">Agregar Producto</button>
+            <button type="button" class="btn" id="limpiar">Limpiar</button>
+          </div>
+        </form>
+
+        <div class="mensaje">
+          <p id="txt-mensaje"></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    <h4>Alura Geek</h4>
+    <h5>Desarrollado por Kekosas</h5>
+    <h6>Alura LATAM - 2024</h6>
+  </footer>
+
+  <script src="assets/js/mostrarProductos.js" type="module"></script>
+  <script src="assets/js/agregaProductos.js" type="module"></script>
+</body>
+
+</html>
